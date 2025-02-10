@@ -6,7 +6,8 @@ import json
 
 app = Flask(__name__)
 # CORS(app, resources={r"/*": {"origins": "http://127.0.0.1:5500"}})
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "https://ai-meme-matcher.netlify.app"}})
+
 
 # Load meme features from the JSON file
 with open("memes_features.json", "r") as f:
