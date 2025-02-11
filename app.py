@@ -5,7 +5,6 @@ import numpy as np
 import json
 
 app = Flask(__name__)
-# CORS(app, resources={r"/*": {"origins": "http://127.0.0.1:5500"}})
 CORS(app, resources={r"/*": {"origins": "https://ai-meme-matcher.netlify.app"}})
 
 
